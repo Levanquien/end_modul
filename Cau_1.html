@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function maxArr(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>max){
+                max = arr[i];
+            }
+        }
+        return max
+    }
+    var arr1 = [10, 5, 2, 8, -1, 6, 8];
+    var arr2 = [2, 4, 0, 5, 1];
+    var arr3 = [-8, -6, -2, -6, -1, -1, -4];
+    document.writeln(maxArr(arr1)+ "</br>");
+    document.writeln(maxArr(arr2)+ "</br>");
+    document.writeln(maxArr(arr3)+ "</br>");
+
+</script>
+</body>
+</html>

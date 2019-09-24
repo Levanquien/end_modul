@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function fibonacci(n) {
+        let arr = new Array();
+        arr[0] = 1;
+        arr[1] = 1;
+        document.writeln(arr[0]);
+        document.writeln(arr[1]);
+        for (let i = 2; ; i++) {
+
+            arr[i] = arr[i - 1] + arr[i - 2];
+            if (arr[i] < n) {
+                document.writeln(arr[i]);
+            }else {
+                return
+            }
+        }
+    }
+
+    fibonacci(25);
+</script>
+</body>
+</html>
